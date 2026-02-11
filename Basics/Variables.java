@@ -19,9 +19,9 @@ public class Variables {
         System.out.println(name);
 
 
-        int Nub1 = 10;
+        int Num1 = 10;
         int Num2 = 20;
-        int sum = a+b;
+        int sum = Num1 + Num2;
 
         System.out.println(sum);
     }
