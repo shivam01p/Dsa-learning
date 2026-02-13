@@ -21,7 +21,7 @@ public class operator {
         System.out.println(B = A--);
         System.out.println(B = --A);
 
-        //** Relational Operator
+        //** Relational Operators
 
         System.out.println(A == B);
         System.out.println(A != B);
@@ -30,11 +30,19 @@ public class operator {
         System.out.println(A <= B);
         System.out.println(A >= B);
 
-        //** Logical Operator
+        //** Logical Operators
 
         System.out.println((3>2) && (2<5));
         System.out.println((3>2) || (5<2));
         System.out.println( !(3>2) );
+
+        //** Assignment Operators
+
+        System.out.println(B = A);
+        System.out.println(B += A);
+        System.out.println(B -= A);
+        System.out.println(B *= A);
+        System.out.println(B /= A);
 
     }
 }
