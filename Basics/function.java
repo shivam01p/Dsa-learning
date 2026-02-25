@@ -35,15 +35,75 @@ public class function {
         return binCoffe;
     }
 
+    public static int sum(int a, int b){
+        return a+b;
+    }
+
+    public static float sum(int a, int b, int c){
+        float sum = a + b + c;
+        
+        return sum;
+    }
+
+    public static boolean isPrime(int num){
+
+        for(int divider = 2; divider <= Math.sqrt(num); divider++){
+
+            if( num % divider == 0 ){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void rangePrime(int n){
+
+        
+        for(int num = 2; num <= n; num++){
+            
+            boolean isPrime = true;
+
+            for(int divider = 2; divider <= Math.sqrt(num); divider++){
+                
+                if(num % divider == 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            
+            if(isPrime){
+                System.out.println(num);
+            }
+        }
+    }
+
+    public static void rngPrime(int range){
+
+        for(int num = 2; num <= range; num ++){
+            
+            if (isPrime(num)) {
+                System.out.print(num + " ");
+            }
+        }
+    }
+
+    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(changeA(90));
+        // System.out.println(changeA(90));
 
-        swap(7, 97);
+        // swap(7, 97);
         
-        System.out.println(factorial(5));
+        // System.out.println(factorial(5));
 
-        System.out.println(binCoffe(5, 2));
+        // System.out.println(binCoffe(5, 2));
+
+        // System.out.println(sum(1, 2, 3));
+
+        // rangePrime(10);
+
+        rngPrime(20);
     }
 }
