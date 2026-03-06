@@ -78,21 +78,34 @@ public class pracQ {
 
         //** Prints sum of ODD and EVEN number
 
-        int even_num = 0, odd_num = 0;
-        do{
-            System.out.println("Enter a number: ");
-            int num = sc.nextInt();
+        // int even_num = 0, odd_num = 0;
+        // do{
+        //     System.out.println("Enter a number: ");
+        //     int num = sc.nextInt();
 
-            if(num%2 == 0){
-                even_num += num;
-                System.out.println("Even sum = " + even_num);
-                System.out.println("Odd sum = " + odd_num);
-            }else{
-                odd_num += num;
-                System.out.println("Even sum = " + even_num);
-                System.out.println("Odd sum = " + odd_num);
-            }
-        }while(true);
+        //     if(num%2 == 0){
+        //         even_num += num;
+        //         System.out.println("Even sum = " + even_num);
+        //         System.out.println("Odd sum = " + odd_num);
+        //     }else{
+        //         odd_num += num;
+        //         System.out.println("Even sum = " + even_num);
+        //         System.out.println("Odd sum = " + odd_num);
+        //     }
+        // }while(true);
+
+        // int evenSum = 0, oddSum = 0;
+        // while (sc.hasNextInt()) {
+        //     int num = sc.nextInt();
+        //     if ((num & 1) == 0) {
+        //         evenSum += num;
+        //     } else {
+        //         oddSum += num;
+        //     }
+        // }
+        // System.out.println("Even sum = " + evenSum);
+        // System.out.println("Odd sum = " + oddSum);
+
 
     }
 }
